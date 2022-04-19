@@ -1,0 +1,44 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{5beeffc9-f2c0-48f3-a10f-c9c65c31ac34}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="Ausbildungsnachweise.dproj" />
+    <Projects Include="Service\Ausbildungsnachweise.Service.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="Ausbildungsnachweise">
+    <MSBuild Projects="Ausbildungsnachweise.dproj" Targets="" />
+  </Target>
+  <Target Name="Ausbildungsnachweise:Clean">
+    <MSBuild Projects="Ausbildungsnachweise.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Ausbildungsnachweise:Make">
+    <MSBuild Projects="Ausbildungsnachweise.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Ausbildungsnachweise_Service">
+    <MSBuild Projects="Service\Ausbildungsnachweise.Service.dproj" Targets="" />
+  </Target>
+  <Target Name="Ausbildungsnachweise_Service:Clean">
+    <MSBuild Projects="Service\Ausbildungsnachweise.Service.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Ausbildungsnachweise_Service:Make">
+    <MSBuild Projects="Service\Ausbildungsnachweise.Service.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="Ausbildungsnachweise;Ausbildungsnachweise_Service" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="Ausbildungsnachweise:Clean;Ausbildungsnachweise_Service:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="Ausbildungsnachweise:Make;Ausbildungsnachweise_Service:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022.04.13 14:56:54.197.groupproj,D:\Roaming\private\JAT\Dokumente\RAD Studio\Projekte\ProjectGroup1.groupproj=D:\Delphi2007\Projekte\Ausbildungsnachweis\Ausbildungsnachweis.groupproj</Transaction>
+    <Transaction>2022.04.13 14:57:07.739.groupproj,D:\Delphi2007\Projekte\Ausbildungsnachweis\Ausbildungsnachweis.groupproj=D:\Delphi2007\Projekte\Ausbildungsnachweis\Ausbildungsnachweise.groupproj</Transaction>
+  </Transactions>
+  <Default.Personality>
+    <Projects ActiveProject="Ausbildungsnachweise.Service.exe"/>
+  </Default.Personality>
+</BorlandProject>
